@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard-ABNT</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+          var lang = navigator.language || navigator.userLanguage; // obtém o idioma do navegador do usuário
+          if (lang.startsWith('pt')) {
+            // Redireciona para a página em português
+            window.location.href = "/lib/portuguese.html";
+          } else {
+            // Redireciona para a página em inglês
+            window.location.href = "/lib/english.html";
+          }
+        }
+      </script>
+      
+</body>
+</html>

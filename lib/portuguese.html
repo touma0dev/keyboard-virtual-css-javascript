@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/lib/css/style.css">
+<script  type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Keyboard-Pattern-ABNT</title>
+</head>
+
+<body>
+    <nav class="navbar">
+      <section class="navbar-section">  
+        <ul class="navbar-logo">
+        <h2 id="myElement">
+            Key-Types
+        </h2>
+      
+    </ul>
+    <ul class="flex-center navbar-list">
+        <li><a href="/lib/temas/temas.html">Temas</a></li>
+        <li><a href="https://github.com/touma0dev" target="_blank"> Git Hub</a></li>
+        <li><a href="/lib/sobre/sobre.html">Sobre</a></li>
+        
+    </ul></section>
+    </nav>
+    
+    <div class="flex-center typing">
+        <div class="type">
+            <h1 class="flex-center type-tittle">
+               Digite-Seu-Texto</h1>
+                <h4 class="flex-center">e tenha uma surpresa...</h4>
+            <input onclick="disable()" class="type-input-text flex-center" id="myInput" type="text">
+        </div>
+        
+    </div>
+
+    <div class="theme">
+        
+        <div class="keyboard ">
+            <div class="btn-theme flex-center" >
+                <div class="btn-theme-btn">
+                <button id="blue" class="btn-theme-btn-Blue">Blue</button>
+                </div>
+                <div class="btn-theme-btn">
+                <button class="btn-theme-btn-Dark">Dark</button>
+
+                </div>
+                <div class="btn-theme-btn">
+                    <button class="btn-theme-btn-Pink">Pink</button>
+    
+                    </div>
+                <div class="btn-theme-btn">
+                <button class="btn-theme-btn-Lemon">Lemon</button>
+
+                </div>
+                <div class="btn-theme-btn">
+                    <button class="btn-theme-btn-Rgb"><span>
+                        Rgb
+                    </span></button>
+                </div>
+            </div>
+            <div class="flex-center board pack">
+                <div class="board-brand">
+
+                    <div id="Esc" class="key-top">
+                        Esc
+                    </div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-none"></div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F1">F1</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F2">F2</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F3">F3</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F4">F4</div>
+                </div>
+                <div class="board-brand"  >
+
+                    <div class="key-top letter" id="F5">F5</div>
+                </div>
+
+                <div class="board-brand"  >
+
+                    <div class="key-top letter" id="F6">F6</div>
+                </div>
+
+                <div class="board-brand"  >
+
+                    <div class="key-top letter" id="F7">F7</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F8" >F8</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-none"><br></div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F9" >F9</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F10" >F10</div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F11" >F11</div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-top letter" id="F12">F12</div>
+                </div>
+            </div>
+            <div class="flex-center board pack">
+                <div class="board-brand">
+
+                    <div class="key letter" id="'" data-key="'">~`</div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key letter" id="1" data-key="1">!<br>1</div>
+                </div>
+
+                <div class="board-brand letter">
+
+                    <div class="key letter" id="2" data-key="2">@<br>2</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter" id="3" data-key="3">#<br>3</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter"id="4" data-key="4">$<br>4</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter" id="5" data-key="5">%<br>5</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter"id="6" data-key="6">^<br>6</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter"id="7" data-key="7">&<br>7</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter" id="8" data-key="8">*<br>8</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter"id="9" data-key="9">(<br>9</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter" id="0" data-key="0">)<br>0</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter" id="-" data-key="-">-_</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key letter" id="=" data-key="=">=<br>+</div>
+                </div>
+
+                <div class="board-brand">
+                    <div id="Backspace" class="key-backspace" >
+                        &leftarrow;
+                    </div>
+                </div>
+            </div>
+            <div class="flex-center board pack">
+                <div class="board-brand">
+
+                    <div class="key-tab" id="Tab">
+                        &#8646;
+                </div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" data-key="q"  id="Q">Q</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" data-key="w" id="W">W</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="E" data-key="e">E</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="R" data-key="r">R</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="T" data-key="t">T</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="Y" data-key="y">Y</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="U" data-key="u">U</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="I"data-key="i" >I&MediumSpace;</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div  class="key-line-3 letter"id="O" data-key="o">O</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="P" data-key="p">P</div>
+                </div>
+
+             
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="[" data-key="[">[{
+                    </div>
+                </div>
+
+                <div class="board-brand">
+                    <div style="width: 90px;" class="key-enter"id="Enter">
+                 Enter
+                    </div>
+                </div>
+            </div>
+            <div class="flex-center board pack">
+                <div class="board-brand">
+
+                    <div class="key-lock letter"id="capslock" data-key="capslock">
+                        Lock&#x21EA;
+                </div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="A" data-key="a">A</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="S" data-key="s">S</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="D"  data-key="d">D</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="F" data-key="f">F</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="G"  data-key="g">G</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="H"  data-key="h">H</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="J"  data-key="j"> J</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="K"  data-key="k">K</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="L"  data-key="l">L</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id=";"  data-key=";">Ç</div>
+                </div>
+
+              
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="|"  data-key="]">]}
+                    </div>
+                </div>
+
+                <div class="board-brand">
+                    <div style="width: 90px;" class="key-enter" id="Shift">
+                 Shift
+                    </div>
+                </div>
+            </div>
+            <div class="flex-center board pack">
+                <div class="board-brand">
+
+                    <div class="key-shift letter"id="Shift2">
+                        Shift
+                </div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter" id="Z"  data-key="z">Z</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="X"  data-key="x">X</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="C"  data-key="c">C</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="V"  data-key="v">V</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="B"  data-key="b">B</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="N"  data-key="n">N</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="M"  data-key="m">M</div>
+                </div>
+                <div class="board-brand">
+
+                    <div id="," class="key-line-3 letter">,&blacktriangleleft;</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id=">" data-key=">">.&blacktriangleright;</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-line-3 letter"id="?" data-key="/"><g id="Slash">;&ThinSpace;:</g></div>
+                </div>
+                <div class="board-brand">
+                    <div class="">
+                        <div class="board-brand" >
+
+                            <div class="key-win-left">
+                                <svg fill="#f5f5f5" width="25px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1863.53 1016.437c31.171 0 56.47 25.299 56.47 56.47v790.589c0 16.376-7.115 31.849-19.313 42.465-10.39 9.149-23.605 14.005-37.158 14.005-2.484 0-5.082-.113-7.567-.452l-903.53-123.331c-28.008-3.84-48.903-27.784-48.903-56.02v-667.256c0-31.171 25.3-56.47 56.471-56.47Zm-1129.412 0c31.171 0 56.47 25.299 56.47 56.47v634.504c0 16.376-7.115 31.85-19.426 42.579-10.39 9.035-23.491 13.891-37.044 13.891-2.485 0-5.196-.113-7.68-.564L48.79 1669.35C20.78 1665.51 0 1641.68 0 1613.444v-540.537c0-31.171 25.299-56.47 56.47-56.47Zm-7.726-859.855c16.151-2.372 32.415 2.597 44.725 13.327 12.424 10.73 19.426 26.315 19.426 42.579V846.99c0 31.285-25.186 56.47-56.47 56.47H56.424c-31.171 0-56.47-25.185-56.47-56.47V306.455c0-28.123 20.781-52.066 48.79-55.906ZM1855.974.474c16.15-2.033 32.414 2.71 44.724 13.44 12.198 10.73 19.313 26.203 19.313 42.466v790.588c0 31.285-25.299 56.471-56.47 56.471H960.01c-31.171 0-56.47-25.186-56.47-56.47V179.711c0-28.235 20.78-52.066 48.903-55.906Z" fill-rule="evenodd"/>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-center board pack">
+                <div class="board-brand">
+
+                    <div class="key-control" id="Control">
+                        Ctrl
+                </div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-line-3">
+                        <svg fill="#f5f5f5" width="19px" height="29px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1863.53 1016.437c31.171 0 56.47 25.299 56.47 56.47v790.589c0 16.376-7.115 31.849-19.313 42.465-10.39 9.149-23.605 14.005-37.158 14.005-2.484 0-5.082-.113-7.567-.452l-903.53-123.331c-28.008-3.84-48.903-27.784-48.903-56.02v-667.256c0-31.171 25.3-56.47 56.471-56.47Zm-1129.412 0c31.171 0 56.47 25.299 56.47 56.47v634.504c0 16.376-7.115 31.85-19.426 42.579-10.39 9.035-23.491 13.891-37.044 13.891-2.485 0-5.196-.113-7.68-.564L48.79 1669.35C20.78 1665.51 0 1641.68 0 1613.444v-540.537c0-31.171 25.299-56.47 56.47-56.47Zm-7.726-859.855c16.151-2.372 32.415 2.597 44.725 13.327 12.424 10.73 19.426 26.315 19.426 42.579V846.99c0 31.285-25.186 56.47-56.47 56.47H56.424c-31.171 0-56.47-25.185-56.47-56.47V306.455c0-28.123 20.781-52.066 48.79-55.906ZM1855.974.474c16.15-2.033 32.414 2.71 44.724 13.44 12.198 10.73 19.313 26.203 19.313 42.466v790.588c0 31.285-25.299 56.471-56.47 56.471H960.01c-31.171 0-56.47-25.186-56.47-56.47V179.711c0-28.235 20.78-52.066 48.903-55.906Z" fill-rule="evenodd"/>
+                        </svg></div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-alt" id="Alt">Alt</div>
+                </div>
+
+                <div class="board-brand">
+
+                    <div class="key-space letter" id="space" fill="" data-key=" ">
+                        <svg  fill="#f5f5f5" width="25px" height="22px"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"><path d="M21,9c-0.6,0-1,0.4-1,1v3H4v-3c0-0.6-0.4-1-1-1s-1,0.4-1,1v4c0,0.6,0.4,1,1,1h18c0.6,0,1-0.4,1-1v-4C22,9.4,21.6,9,21,9z"/></svg></div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-line-3" >
+                        <svg fill="#f1f1f1" width="25px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path  d="M3 21h5v-1H4V4h2v2h10V4h2v3h.4a.989.989 0 0 1 .6.221V3h-3V2h-3a2 2 0 0 0-4 0H6v1H3zM7 3h3V1.615A.615.615 0 0 1 10.614 1h.771a.615.615 0 0 1 .615.615V3h3v2H7zm4 14h9v1h-9zM9 8v16h13V11.6L18.4 8zm12 15H10V9h7v4h4zm0-11h-3V9h.31L21 11.69zm-10 2h9v1h-9zm0 6h7v1h-7z"/>
+                        <path fill="none" d="M0 0h24v24H0z"/></svg></div>
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-line-3" id="fn">Fn</div>
+                    
+                </div>
+                <div class="board-brand">
+
+                    <div class="key-alt-right" id="Alt2">Alt</div>
+                    
+                </div> <div class="board-brand">
+
+                    <div class="key-control-right" id="Control2">Ctrl</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/lib/js/theme-btn.js"></script>
+<script type="text/javascript" src="/lib/js//pt-br/funcoes-de-click.js"></script>
+<script type="text/javascript" src="/lib/js//pt-br/tema-para-pressionar.js"></script>
+<script type="text/javascript" src="/lib/js//pt-br/toque-e-escreva.js"></script>
+
+</body>
+</html>

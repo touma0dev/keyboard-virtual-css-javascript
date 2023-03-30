@@ -1,0 +1,441 @@
+@use 'preset';
+//Font Import
+@import "https://fonts.googleapis.com/css?family=Questrial:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Merriweather:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700";
+$ff-questrial: "Questrial", "Rubik", sans-serif;
+$ff-merriweather: "Merriweather", "Rubik", sans-serif;
+html,body,a,li{
+    font-family: $ff-questrial;
+    text-decoration: none;
+    list-style-type: none;
+}
+//Color Import
+$deep-dark: #0c0c0c;
+$primary: #333;
+$secondary:#f5f5f5;
+$red:red;
+$pink:pink;
+$pink-dark:rgb(247, 74, 247);
+$btn:rgb(55, 0, 255);
+$btn-border:rgb(151, 151, 151);
+.navbar{
+    font-size: 25px;
+    @include preset.flex-center;
+    justify-content: space-around;
+    &-section{
+        width: 900px;
+        @include preset.flex-center;
+        max-width:1350px;
+        justify-content: space-around;
+        height: 45px;
+        position: relative;
+        top: 15px;
+        background: rgba(255, 255, 255, 0.48);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.4px);
+        -webkit-backdrop-filter: blur(9.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    &-list{
+        li{
+            padding: 0px 15px;
+            a{
+                color: $primary;
+            }
+        }
+    }
+}
+.flex-center{
+    @include preset.flex-center;
+    justify-content: center;
+}
+.typing{
+    position: relative;
+    top: 40px;
+}
+.type{
+    &-tittle{
+        text-align: center;
+    }
+    &-input-text{
+        width: 1500px;
+        max-width: 750px;
+        padding: 9px 5px;
+        border-radius: 5px;
+        font-size: 30px;
+        border: 0.5px solid $primary;
+        font-family: $ff-questrial;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        outline: none;
+    }
+}
+.theme{
+    margin: 50px;
+    @include preset.flex-center;
+    justify-content: center;
+}
+.keyboard{
+    border-radius: 5px;
+    border: 1px solid $secondary;
+    background-color: $pink;//$red:red;$pink:pink;$primary;
+    padding: 5px 5px;
+    animation: rainbow 10s infinite linear;
+    -webkit-animation: rainbow 10s infinite linear;
+    animation: rainbow 10s infinite linear;
+}
+.board{
+
+    &-brand{
+        padding: 0 1px;
+        
+    }
+}.pack{
+    padding: 2px;
+}
+.key{
+    text-align: center;
+    font-size:16px;
+    color: $secondary;
+    border: 0.5px solid $secondary;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 37px;
+    width: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+    transition: all 2 ease;
+    scale: 1;
+    &:hover{
+      @include preset.hover;
+    }
+    &-top{
+        text-align: center;
+        font-size: 16px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 6px 6px;
+        width: 39px; &:hover{
+            @include preset.hover;
+          }
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;    
+    }&-backspace{
+        cursor: pointer;
+        text-align: center;
+        font-size: 18px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 6px 7px;
+        width: 80px;
+        height: 33px;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+    &-line-3{
+        text-align: center;
+        font-size:20px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 5px 10px;
+        height: 31px;
+        width: 25px;
+        &:hover{
+            @include preset.hover;
+          }
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+    }&-win-left{
+        text-align: center;
+        font-size:20px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 10px 4px;
+        width: 89px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;  
+         &:hover{
+            @include preset.hover;
+          }
+    }
+    &-shift{
+        text-align: center;
+        font-size:25px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 8px 8px;
+        width:125px;
+        &:hover{
+            @include preset.hover;
+          }
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+    }
+    &-tab{
+        position: relative;
+        text-align: center;
+        font-size:25px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 5px 8px;
+        width: 74px;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+    }&-enter{
+        text-align: center;
+        font-size:16px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 13px 5px;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width: 42px;
+
+    }&-lock{
+        text-align: center;
+        font-size:20px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 9px 3px;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width: 85px;
+    }&-space{
+        text-align: center;
+        font-size:25px;
+        height: 42px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width:360px;
+    }&-alt{
+        text-align: center;
+        font-size:20px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 10px 3px;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width: 55px;
+    }&-control{
+        text-align: center;
+        font-size:22px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 10px 3px;
+        border-radius: 5px;
+        &:hover{
+            @include preset.hover;
+          }
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width: 50px;
+    }&-alt-right{
+        text-align: center;
+        font-size:22px;
+        color: $secondary;
+        border: 0.5px solid $secondary;
+        padding: 9px 3px;
+        &:hover{
+            @include preset.hover;
+          }
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width: 35px;
+    }
+    &-control-right{
+        text-align: center;
+        font-size:22px;
+        color: $secondary;
+        &:hover{
+            @include preset.hover;
+          }
+        border: 0.5px solid $secondary;
+        padding: 9px 3px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        cursor: pointer;
+        width: 49px;
+    }
+    &-none{
+        padding:0 5px;
+    }
+
+}
+.pressed{
+    color: rgb(2, 2, 2);
+    border: 0.5px solid rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.432);
+    scale:0.98;
+    svg{
+        fill: #000000 !important;
+    }
+}
+#Backspace{
+    fill: white;
+}
+.btn-theme{
+&-btn{
+    padding: 5px 6px;
+    &-Rgb{
+        font-size: 3em;
+        font-weight: bold;
+        color: #fafafa;
+        background-color: transparent;
+        border: 2px solid $secondary;
+        &:hover{
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00a950, 0 0 30px #00a950, 0 0 40px #00a950, 0 0 50px #00a950;
+            transition:all 1s ease-in-out ;
+        }       
+    }        
+
+    .btn-theme-btn-Lemon{
+        background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+        border-radius: 40px;
+        color: #00a84f;
+        display: block;
+        font-size: 1.4em;
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        z-index: 2;
+        &:hover{
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00a950, 0 0 30px #00a950, 0 0 40px #00a950, 0 0 50px #00a950;
+            transition:all 1s ease ;
+        }
+    }
+    &-Pink{
+        border: 3px solid $pink-dark;
+        background-color: transparent;
+        color:$pink-dark;
+        &:hover{
+            transition:all 1s ease ;
+            border: 3px solid $pink-dark;
+            background-color:$pink-dark;
+            color:rgb(255, 222, 173);
+            
+        }
+    }
+    &-Dark{
+        border: 3px solid $secondary;
+        background-color: $deep-dark;
+        color: $secondary;
+        &:hover{
+            transition:all 1s ease;
+            border: 3px solid $deep-dark;
+            color: $deep-dark;
+            background: transparent;
+        }
+    }
+    &-Blue{
+        color: $secondary;
+        font-size: 1.5em;
+        background-color: $btn;
+        border: 2px solid $btn-border;
+        &:hover{
+            transition:all 1s ease;
+            border: 2px solid $btn;
+            background: transparent;
+            color: $btn;
+        }
+    }
+    button{
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+   
+        }
+        }
+           
+    
+  
+  .keyboard.Blue {
+    /* gradiente de azul claro para escuro */
+    background-image: linear-gradient(to bottom, #64b5f6, #0d47a1);
+  }
+  
+  .keyboard.Dark {
+    /* gradiente escuro */
+    background-image: linear-gradient(to bottom, #333333, #000000);
+    color: #f2f2f2;
+  }
+  
+  .keyboard.Pink {
+    /* gradiente de rosa claro para escuro */
+    background-image: linear-gradient(to bottom, #f48fb1, #880e4f);
+  }
+  
+  .keyboard.Lemon {
+    /* gradiente de amarelo claro para escuro */
+    background-image: linear-gradient(to bottom, #ffecb3, #f57f17);
+  }
+  
+  .keyboard.Rgb { 
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
